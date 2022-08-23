@@ -2,7 +2,6 @@
 using HungryPizza.Api.Models;
 using HungryPizza.Api.Services.Interface;
 using HungryPizza.Infra.Entities;
-using HungryPizza.Infra.Infrastructure;
 using HungryPizza.Infra.UnitOfWork;
 using HungryPizza.Models;
 using HungryPizza.Models.Enums;

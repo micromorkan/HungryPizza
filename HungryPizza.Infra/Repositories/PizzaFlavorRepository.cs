@@ -1,7 +1,7 @@
 ﻿using Dapper;
 using HungryPizza.Infra.Entities;
-using HungryPizza.Infra.Infrastructure;
 using HungryPizza.Infra.Repositories.Interface;
+using HungryPizza.Infra.UnitOfWork;
 
 namespace HungryPizza.Infra.Repositories
 {

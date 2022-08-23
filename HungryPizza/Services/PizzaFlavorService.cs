@@ -1,7 +1,6 @@
 ﻿using HungryPizza.Api.Mappings;
 using HungryPizza.Api.Models;
 using HungryPizza.Api.Services.Interface;
-using HungryPizza.Infra.Infrastructure;
 using HungryPizza.Infra.UnitOfWork;
 
 namespace HungryPizza.Api.Services

@@ -1,8 +1,6 @@
 using HungryPizza.Api.Auth;
 using HungryPizza.Api.Services;
 using HungryPizza.Api.Services.Interface;
-using HungryPizza.Infra.Infrastructure;
-using HungryPizza.Infra.Infrastructure.Interface;
 using HungryPizza.Infra.Repositories;
 using HungryPizza.Infra.Repositories.Interface;
 using HungryPizza.Infra.UnitOfWork;
@@ -65,7 +63,6 @@ void ConfigureServices(IServiceCollection services)
     services.AddTransient<IOrderService, OrderService>();
     services.AddTransient<IUserService, UserService>();
     services.AddTransient<IPizzaFlavorService, PizzaFlavorService>();
-    services.AddTransient<IConnectionFactory, ConnectionFactory>();
     services.AddTransient<IUnitOfWork, UnitOfWork>();
     services.AddTransient<IOrderRepository, OrderRepository>();
     services.AddTransient<IUserRepository, UserRepository>();

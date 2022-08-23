@@ -1,5 +1,4 @@
-﻿using HungryPizza.Infra.Infrastructure;
-using HungryPizza.Infra.Repositories;
+﻿using HungryPizza.Infra.Repositories;
 using HungryPizza.Infra.Repositories.Interface;
 using HungryPizza.Infra.UnitOfWork.Interface;
 

@@ -1,16 +1,17 @@
-﻿using System.Data;
+﻿using Microsoft.Extensions.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 
-namespace HungryPizza.Infra.Infrastructure
+namespace HungryPizza.Infra.UnitOfWork
 {
     public sealed class DbSession : IDisposable
     {
         public IDbConnection Connection { get; }
         public IDbTransaction Transaction { get; set; }
 
-        public DbSession()
+        public DbSession(IConfiguration configuration)
         {
-            Connection = new SqlConnection("Server=(localdb)\\mssqllocaldb;Database=HungryPizza;Trusted_Connection=True;MultipleActiveResultSets=true");
+            Connection = new SqlConnection(configuration.GetConnectionString("DefaultConnection"));
             Connection.Open();
         }
 
